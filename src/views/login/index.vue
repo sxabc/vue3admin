@@ -37,7 +37,9 @@
 import { ref } from 'vue'
 import { validatePassword } from './rules.js'
 import { useStore } from 'vuex'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 // 数据源
 const loginForm = ref({
   username: 'super-admin',
@@ -80,9 +82,10 @@ const handleLogin = () => {
     loading.value = true
     store
       .dispatch('user/login', loginForm.value)
-      .then(() => {
+      .then((res) => {
         loading.value = false
         // TODO: 登录后操作
+        router.push('/')
       })
       .catch((err) => {
         console.log(err)
