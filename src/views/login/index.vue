@@ -7,22 +7,18 @@
 
       <el-form-item prop="username">
         <span class="svg-container">
-          <svg-icon icon="https://res.lgdsunday.club/user.svg"></svg-icon>
+          <svg-icon icon="user" />
         </span>
         <el-input placeholder="username" name="username" type="text" />
       </el-form-item>
 
       <el-form-item prop="password">
         <span class="svg-container">
-          <el-icon>
-            <edit />
-          </el-icon>
+          <svg-icon icon="password" />
         </span>
         <el-input placeholder="password" name="password" />
         <span class="show-pwd">
-          <el-icon>
-            <edit />
-          </el-icon>
+          <svg-icon icon="eye" />
         </span>
       </el-form-item>
 
