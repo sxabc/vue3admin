@@ -21,6 +21,7 @@
 }
 
 #app .main-container {
+  transition: margin-left 0.28s;
   min-height: 100%;
   transition: margin-left 0.28s;
   margin-left: 210px;
@@ -28,6 +29,7 @@
 }
 
 #app .sidebar-container {
+  transition: width 0.28s;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -185,6 +187,21 @@
 
 .el-avatar {
   --el-avatar-background-color: none;
+}
+
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+.breadcrumb-enter-from,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
 }
 
 html,
