@@ -46,6 +46,7 @@ import variables from '@/styles/variables.module.scss'
   right: 0;
   z-index: 9;
   width: calc(100% - #{$sideBarWidth});
+  transition: width #{$sideBarDuration};
 }
 
 .hideSidebar .fixed-header {
