@@ -7,9 +7,7 @@
 
       <el-form-item prop="username">
         <span class="svg-container">
-          <el-icon>
-            <avatar />
-          </el-icon>
+          <svg-icon icon="https://res.lgdsunday.club/user.svg"></svg-icon>
         </span>
         <el-input placeholder="username" name="username" type="text" />
       </el-form-item>
@@ -37,6 +35,7 @@
 // 导入组件之后无需注册可直接使用
 import { Avatar, Edit } from '@element-plus/icons'
 import {} from 'vue'
+import SvgIcon from '@/components/SvgIcon'
 </script>
 
 <style lang="scss" scoped>
