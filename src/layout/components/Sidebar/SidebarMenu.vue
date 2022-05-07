@@ -1,8 +1,8 @@
 <template>
   <!-- 一级 menu 菜单 -->
-  <el-menu
-    :collapse="!$store.getters.sidebarOpened"
+   <el-menu
     :default-active="activeMenu"
+    :collapse="!$store.getters.sidebarOpened"
     :background-color="$store.getters.cssVar.menuBg"
     :text-color="$store.getters.cssVar.menuText"
     :active-text-color="$store.getters.cssVar.menuActiveText"
