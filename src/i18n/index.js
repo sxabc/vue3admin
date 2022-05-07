@@ -6,14 +6,12 @@ import mEnLocale from './lang/en'
 const messages = {
   en: {
     msg: {
-      test: 'hello world',
-      mEnLocale
+      ...mEnLocale
     }
   },
   zh: {
     msg: {
-      test: '你好世界',
-      mZhLocale
+      ...mZhLocale
     }
   }
 }
