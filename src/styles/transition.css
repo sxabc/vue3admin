@@ -1,18 +1,3 @@
-.breadcrumb-enter-active,
-.breadcrumb-leave-active {
-  transition: all 0.5s;
-}
-
-.breadcrumb-enter-from,
-.breadcrumb-leave-active {
-  opacity: 0;
-  transform: translateX(20px);
-}
-
-.breadcrumb-leave-active {
-  position: absolute;
-}
-
 /* fade-transform */
 .fade-transform-leave-active,
 .fade-transform-enter-active {
@@ -27,4 +12,19 @@
 .fade-transform-leave-to {
   opacity: 0;
   transform: translateX(30px);
+}
+
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+.breadcrumb-enter-from,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
 }

@@ -38,7 +38,6 @@ export default {
       state.tagsViewList[index] = tag
       setItem(TAGS_VIEW, state.tagsViewList)
     },
-
     /**
      * 删除 tag
      * @param {type: 'other'||'right'||'index', index: index} payload

@@ -3,10 +3,12 @@
     <hamburger class="hamburger-container" />
     <breadcrumb class="breadcrumb-container" />
     <div class="right-menu">
-    <header-search class="right-menu-item hover-effect" />
-    <theme-picker class="right-menu-item hover-effect"></theme-picker>
-    <lang-select class="right-menu-item hover-effect" />
-    <screenfull class="right-menu-item hover-effect" />
+      <header-search class="right-menu-item hover-effect" />
+      <theme-picker class="right-menu-item hover-effect"></theme-picker>
+      <lang-select class="right-menu-item hover-effect" />
+      <screenfull class="right-menu-item hover-effect" />
+      <guide class="right-menu-item hover-effect" />
+
       <!-- 头像 -->
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
@@ -27,6 +29,7 @@
           </el-dropdown-menu>
         </template>
       </el-dropdown>
+
     </div>
   </div>
 </template>
@@ -41,6 +44,7 @@ import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemeSelect/index'
 import Screenfull from '@/components/Screenfull'
 import HeaderSearch from '@/components/HeaderSearch'
+import Guide from '@/components/Guide'
 
 const store = useStore()
 const logout = () => {
@@ -93,17 +97,17 @@ watch(
         }
       }
     }
-     ::v-deep(.right-menu-item) {
-        display: inline-block;
-        padding: 0 18px 0 0;
-        font-size: 24px;
-        color: #5a5e66;
-        vertical-align: text-bottom;
-        margin-left: 8px;
-        &.hover-effect {
-          cursor: pointer;
-        }
+    ::v-deep(.right-menu-item) {
+      display: inline-block;
+      padding: 0 18px 0 0;
+      font-size: 24px;
+      color: #5a5e66;
+      vertical-align: text-bottom;
+      margin-left: 8px;
+      &.hover-effect {
+        cursor: pointer;
       }
+    }
   }
   .hamburger-container {
     line-height: 46px;
