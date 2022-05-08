@@ -11,7 +11,7 @@ const getters = {
   hasUserInfo: (state) => {
     return JSON.stringify(state.user.userInfo) !== '{}'
   },
-  cssVar: state => {
+  cssVar: (state) => {
     return {
       ...state.theme.variables,
       ...generateColors(getItem(MAIN_COLOR))
