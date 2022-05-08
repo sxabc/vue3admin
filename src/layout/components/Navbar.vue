@@ -5,6 +5,7 @@
     <div class="right-menu">
     <theme-picker class="right-menu-item hover-effect"></theme-picker>
     <lang-select class="right-menu-item hover-effect" />
+    <screenfull class="right-menu-item hover-effect" />
       <!-- 头像 -->
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
@@ -37,6 +38,7 @@ import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemeSelect/index'
+import Screenfull from '@/components/Screenfull'
 
 const store = useStore()
 const logout = () => {
