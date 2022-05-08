@@ -133,6 +133,34 @@ const publicRoutes = [
         component: () => import('@/views/error-page/401')
       }
     ]
+  },
+  {
+    path: '/my',
+    title: ['个人中心']
+  },
+  {
+    path: '/user',
+    title: ['用户']
+  },
+  {
+    path: '/user/manage',
+    title: ['用户', '用户管理']
+  },
+  {
+    path: '/user/info',
+    title: ['用户', '用户信息']
+  },
+  {
+    path: '/article',
+    title: ['文章']
+  },
+  {
+    path: '/article/ranking',
+    title: ['文章', '文章排名']
+  },
+  {
+    path: '/article/create',
+    title: ['文章', '创建文章']
   }
 ]
 
