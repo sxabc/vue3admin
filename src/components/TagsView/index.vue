@@ -24,7 +24,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import ContextMenu from './ContextMenu.vue'
-import { ref, reactive } from 'vue'
+import { ref, reactive, watch } from 'vue'
 import { useStore } from 'vuex'
 
 /**

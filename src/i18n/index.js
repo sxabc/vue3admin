@@ -18,7 +18,7 @@ const messages = {
 }
 
 // 创建 locale 语言变量
-const locale = 'en'
+// const locale = 'en'
 
 // 初始化 i18n 实例
 const i18n = createI18n({
