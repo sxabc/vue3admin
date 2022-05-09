@@ -18,16 +18,13 @@
             <el-image class="avatar" :src="row.avatar" :preview-src-list="[row.avatar]"></el-image>
           </template>
         </el-table-column>
-        <el-table-column :label="$t('msg.excel.role')">
+
+        <el-table-column :label="$t('msg.excel.openTime')">
           <template #default="{ row }">
-            <div v-if="row.role && row.role.length > 0">
-              <el-tag v-for="item in row.role" :key="item.id" size="mini">{{ item.title }}</el-tag>
-            </div>
-            <div v-else>
-              <el-tag size="mini">{{ $t('msg.excel.defaultRole') }}</el-tag>
-            </div>
+            {{ $filters.dateFilter(row.openTime) }}
           </template>
         </el-table-column>
+
         <el-table-column prop="openTime" :label="$t('msg.excel.openTime')"> </el-table-column>
         <el-table-column :label="$t('msg.excel.action')" fixed="right" width="260">
           <template #default>
